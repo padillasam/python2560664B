@@ -9,3 +9,4 @@ for i in range(100):
         print(i,'es multiplo de 9')
     else:
         print(i,'NO es multiplo de 9')
+
