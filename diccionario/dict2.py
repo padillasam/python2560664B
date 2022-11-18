@@ -7,7 +7,7 @@ dict={
     'caballo':'horse',
 }
 print(dict)
-dict=sorted(dict)
+#dict=sorted(dict)
 print(dict)
 
 print(dict.get('perro'))
@@ -37,3 +37,10 @@ for k,v  in dict.items():
 for item  in dict.items():
     print(item)
 
+def busqueda(diccionario, elem):
+    if elem in diccionario.keys():
+        print('si esta')
+    else:
+        print('no esta')
+
+busqueda(dict,'perro')
