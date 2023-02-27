@@ -1,13 +1,10 @@
-def edad():
-    try:
-        tuedad=int(input("introduce tu edad"))
-        print(f'tu edad es  {tuedad}')
-        #print('Tu edad es ',tuedad)
-    except ValueError as e:    
-        print(e)
-        print("La edad debe ser un valor numerico...")
-        edad()
-    else:
-        print('Viene por el else')
-
-edad()
+values = [1, 4]
+#x,y=19,30
+#print(divmod(10,3))
+try:
+    q, r = divmod(*values)
+    #print('q=',q)
+    print(f'q={q}')
+    print(f'r={r}')
+except (ZeroDivisionError, TypeError) as e:
+    print(type(e), e)
