@@ -1,6 +1,8 @@
-class Persona:
-    def __init__(self,nombre):
+class Persona:    
+    nacionalidad='Colombia'
+    def __init__(self,nombre,documento):
         self.__nombre=nombre
+        self.__documento=documento
         print('Activando constructor')
 
     def getNombre(self):
@@ -9,13 +11,25 @@ class Persona:
     def setNombre(self, nombre):
         self.__nombre=nombre
 
-    def metodo(self):
-        print('Soy un método')
+    def metodo(self,mail):
+        self.__mail=mail
+        #print('Soy un método')
 
 
-ob=Persona('Ana')
+ob=Persona('Ana',12345)
+ob.mail='ana@mail.com'
+print(ob.mail)
+ob1=Persona('Luis',54321)
+print(ob.nacionalidad)
+print(ob1.nacionalidad)
+print(Persona.nacionalidad)
+
 print(ob.getNombre())
 ob.setNombre('Maria')
 print(ob.getNombre())
 #ob.metodo()
 #print(type(ob))
+
+cadena="SENA"
+print(cadena.lower())
+print(type(cadena))
